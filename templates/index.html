@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block title %}云+创业_中小企业创业扶持{% endblock %}
+ {% block head %}
+
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/sliderstyle.css') }}">
+
+
+
+ {% endblock %}
+
+{% block main %}
+
+
+		<div id="wrapper">
+
+			<div id="slider-wrap">
+			      	  <ul id="slider">
+			          	 <li data-bg="url(../static/images/indexbg/indexbg.png)">
+			                <div style="margin-left:150px;">
+                                <br><br><br><br><br>
+			                    <h3 style="font-size:45px;color:#fff">视频狂欢季</h3><br>
+			                    <span style="font-weight: lighter;font-size: 18px;">提供音视频通话、直播、点播、小程序等视频产品组合优惠套餐，特惠8折起</span>
+                                <br><br><br>
+                                <button type="button" style="width: 200px;height:45px;background: transparent;color: #fff;border: 0.2px solid #fff; font-size:16px;font-weight: normal">立即选购</button>
+			                </div>
+			                <i class="fa fa-image"></i>
+			             </li>
+
+			             <li data-bg="url(../static/images/indexbg/indexbg2.png)">
+			                <div style="margin-left:150px;">
+                                <br><br><br><br><br>
+			                    <h3 style="font-size:45px;color:#fff">国内首推AMD CPU云服务器</h3><br>
+			                    <span style="font-weight: lighter;font-size: 18px;">全新霄龙处理器，高性价比，节省30%服务器成本，1核1G&nbsp;17元/月起</span>
+                                <br><br><br>
+                                <button type="button" style="width: 200px;height:45px;background: transparent;color: #fff;border: 0.2px solid #fff; font-size:16px;font-weight: normal">立即选购</button>
+			                </div>
+
+			                <i class="fa fa-gears"></i>
+
+			             </li>
+
+			             <li data-bg="url(../static/images/indexbg/indexbg3.png)">
+			                <div style="margin-left:150px;">
+                                <br><br><br><br><br>
+                            <h3 style="font-size:45px;color:#fff">小微企业专享特惠</h3><br>
+			                    <span style="font-weight: lighter;font-size: 18px;">云服务器仅需166.8元/年起，MySQL只要72元/年起，Redis产品2.5折起</span>
+                                <br><br><br>
+                                <button type="button" style="width: 200px;height:45px;background: transparent;color: #fff;border: 0.2px solid #fff; font-size:16px;font-weight: normal">立即选购</button>
+			                </div>
+			                <i class="fa fa-sliders"></i>
+			             </li>
+
+			             <li data-bg="url(../static/images/indexbg/indexbg4.png)">
+			                <div style="margin-left:150px;">
+                                <br><br><br><br><br>
+			                    <h3 style="font-size:45px;color:#fff">流计算服务SCS新品上线</h3><br>
+			                    <span style="font-weight: lighter;font-size: 18px;">云端托管，分钟级构建实时计算系统，试用申请中/span>
+                                    <br><br><br>
+                                <button type="button" style="width: 200px;height:45px;background: transparent;color: #fff;border: 0.2px solid #fff; font-size:16px;font-weight: normal">了解详情</button>
+			                </div>
+			                <i class="fa fa-code"></i>
+			             </li>
+
+			             <li data-bg="url(../static/images/indexbg/indexbg5.png)">
+			                <div style="margin-left:150px;">
+                                <br><br><br><br><br>
+			                    <h3 style="font-size:45px;color:#fff">云数据库MongoDB 3.6正式上线</h3><br>
+			                    <span style="font-weight: lighter;font-size: 18px;">支持 WiredTiger 存储引擎，多项功能邀您体验</span>
+                                <br><br><br>
+                                <button type="button" style="width: 200px;height:45px;background: transparent;color: #fff;border: 0.2px solid #fff; font-size:16px;font-weight: normal">了解详情</button>
+			                </div>
+			                <i class="fa fa-microphone-slash"></i>
+			             </li>
+
+                          <li data-bg="url(../static/images/indexbg/indexbg6.png)">
+			                <div style="margin-left:150px;">
+                                <br><br><br><br><br>
+			                    <h3 style="font-size:45px;color:#fff">AI普惠 接入免费</h3><br>
+			                    <span style="font-weight: lighter;font-size: 18px;">图片鉴黄，文字识别，人脸识别，智能语音等产品0元接入</span>
+                                <br><br><br>
+                                <button type="button" style="width: 200px;height:45px;background: transparent;color: #fff;border: 0.2px solid #fff; font-size:16px;font-weight: normal">了解详情</button>
+			                </div>
+			                <i class="fa fa-microphone-slash"></i>
+			             </li>
+
+			          </ul>
+
+			           <!--controls-->
+			          <div class="btns" id="next"><i class="fa fa-arrow-right"><p style="font-family:courier;font-size:20px;color:#82b3be;"> > </p></i></div>
+			          <div class="btns" id="previous"><i class="fa fa-arrow-left"><p style="font-family:courier;font-size:20px;color:#82b3be;"> < </p></i></div>
+			          <div id="counter"></div>
+
+			          <div id="pagination-wrap">
+			            <ul>
+			            </ul>
+			          </div>
+			          <!--controls-->
+
+		</div>
+ <div class="c-hero-aside-inner">
+     <div>
+         现在注册 <br> 即可体验
+         <a href="//cloud.tencent.com/act/free" hotrep="hp.hero_aside.btn.free" style="color:#fff">免费套餐</a>
+     </div>
+     <div style="padding-top:7px">
+         <em style="font-size:40px;font-weight: 600;font-style:normal;">40+</em>
+         <br>款免费云产品
+     </div>
+     <div style="padding-top:24px">
+        <a href="{{ url_for('register') }}" > <button role="button" style="width: 180px;height:40px;background:#00a4ff;color: #fff;border: 0; font-size:16px;font-weight: normal">注册新账号</button></a>
+     </div>
+ </div>
+<img src="../static/images/indextable.png">
+<h2 align="centre" style="color:black;font-size: 23px;font-weight: 400;padding-top: 20px">了解我们的云产品</h2>
+
+
+
+
+     <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+     <script type="text/javascript"  src="{{ url_for('static',filename='js/slide.js') }}" ></script>
+{% endblock %}
